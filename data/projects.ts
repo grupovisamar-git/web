@@ -1,9 +1,9 @@
 export const projectsData: Record<string, any> = {
-  "residencial-las-palmas": {
-    name: "Residencial Las Palmas",
+  "residencial-lazaro-cardenas-zapopan": {
+    name: "Residencial Lázaro Cárdenas",
     type: "Desarrollo Residencial Premium",
-    location: "Coyoacán, CDMX",
-    fullAddress: "Av. Universidad 1234, Del Carmen, Coyoacán, CDMX",
+    location: "Zapopan, Jalisco",
+    fullAddress: "Av. Lázaro Cárdenas 2500, Zapopan, Jalisco",
     value: 25000000,
     minInvestment: 1,
     returnRate: 12,
@@ -12,7 +12,7 @@ export const projectsData: Record<string, any> = {
     status: "En Construcción - 45% Avanzado",
     image: "/luxury-residential-development-mexico-city.jpg",
     description:
-      "Desarrollo residencial de lujo que combina arquitectura contemporánea con la tradición de Coyoacán. 48 residencias exclusivas con amenidades de primer nivel.",
+      "Desarrollo residencial de lujo en el corazón de Zapopan. 48 residencias exclusivas con arquitectura moderna y amenidades de primer nivel. Ubicación privilegiada en una de las zonas más valoradas de Jalisco.",
     features: [
       "48 residencias de 120-250 m²",
       "Alberca infinity con vista panorámica",
@@ -39,11 +39,11 @@ export const projectsData: Record<string, any> = {
       distributionFrequency: "Trimestral",
     },
   },
-  "plaza-comercial-centro": {
-    name: "Plaza Comercial Centro",
+  "plaza-comercial-garza-garcia": {
+    name: "Plaza Comercial Garza García",
     type: "Desarrollo Comercial",
-    location: "Polanco, CDMX",
-    fullAddress: "Av. Presidente Masaryk 520, Polanco, Miguel Hidalgo, CDMX",
+    location: "Garza García, Nuevo León",
+    fullAddress: "Av. Santa María 1200, Garza García, Nuevo León",
     value: 50000000,
     minInvestment: 1,
     returnRate: 14,
@@ -52,13 +52,13 @@ export const projectsData: Record<string, any> = {
     status: "En Operación - Generando Rendimientos",
     image: "/modern-commercial-plaza-mexico.jpg",
     description:
-      "Plaza comercial premium en el corazón de Polanco, con locales arrendados a marcas internacionales de prestigio. Rendimientos estables y plusvalía garantizada.",
+      "Plaza comercial premium en Garza García, la zona más exclusiva de Monterrey. Locales arrendados a marcas internacionales de prestigio. Rendimientos estables y plusvalía garantizada.",
     features: [
       "15,000 m² de área comercial",
       "25 locales comerciales premium",
       "Estacionamiento subterráneo 200 cajones",
       "Contratos a largo plazo con marcas AAA",
-      "Ubicación estratégica en Masaryk",
+      "Ubicación estratégica en Garza García",
       "Seguridad y vigilancia 24/7",
       "Sistema de climatización central",
       "Elevadores de alta velocidad",
@@ -79,11 +79,11 @@ export const projectsData: Record<string, any> = {
       distributionFrequency: "Mensual",
     },
   },
-  "torre-mixta-reforma": {
-    name: "Torre Mixta Reforma",
+  "torre-mixta-angelopolis-puebla": {
+    name: "Torre Mixta Angelópolis",
     type: "Desarrollo Mixto (Residencial + Comercial)",
-    location: "Reforma, CDMX",
-    fullAddress: "Paseo de la Reforma 505, Cuauhtémoc, CDMX",
+    location: "Angelópolis, Puebla",
+    fullAddress: "Blvd. Atlixcayotl 5500, San Andrés Cholula, Puebla",
     value: 80000000,
     minInvestment: 1,
     returnRate: 15,
@@ -92,7 +92,7 @@ export const projectsData: Record<string, any> = {
     status: "Fase de Pre-venta - 30% Vendido",
     image: "/mixed-use-tower-reforma-avenue.jpg",
     description:
-      "Desarrollo icónico de uso mixto en Reforma. 28 pisos que combinan departamentos de lujo, oficinas corporativas y retail de alto nivel. La inversión más estratégica en CDMX.",
+      "Desarrollo icónico de uso mixto en Angelópolis, Puebla. 28 pisos que combinan departamentos de lujo, oficinas corporativas y retail de alto nivel. La inversión más estratégica en el estado de Puebla.",
     features: [
       "Torre de 28 pisos con certificación LEED",
       "120 departamentos residenciales",
