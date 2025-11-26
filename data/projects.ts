@@ -10,7 +10,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 6,
     term: 24,
     status: "En Construcción - 45% Avanzado",
-    image: "/luxury-residential-development-mexico-city.jpg",
+    image: "/residencial-zapopan-jalisco.jpg",
     description:
       "Desarrollo residencial de lujo en el corazón de Zapopan. 48 residencias exclusivas con arquitectura moderna y amenidades de primer nivel. Ubicación privilegiada en una de las zonas más valoradas de Jalisco.",
     features: [
@@ -50,7 +50,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 7,
     term: 30,
     status: "En Operación - Generando Rendimientos",
-    image: "/modern-commercial-plaza-mexico.jpg",
+    image: "/plaza-comercial-garza-garcia-monterrey.jpg",
     description:
       "Plaza comercial premium en Garza García, la zona más exclusiva de Monterrey. Locales arrendados a marcas internacionales de prestigio. Rendimientos estables y plusvalía garantizada.",
     features: [
@@ -90,7 +90,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 8,
     term: 36,
     status: "Fase de Pre-venta - 30% Vendido",
-    image: "/mixed-use-tower-reforma-avenue.jpg",
+    image: "/torre-mixta-angelopolis-puebla.jpg",
     description:
       "Desarrollo icónico de uso mixto en Angelópolis, Puebla. 28 pisos que combinan departamentos de lujo, oficinas corporativas y retail de alto nivel. La inversión más estratégica en el estado de Puebla.",
     features: [
