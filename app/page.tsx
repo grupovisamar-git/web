@@ -254,6 +254,36 @@ export default function Home() {
                 term: 36,
                 image: "/mixed-use-tower-reforma-avenue.jpg",
               },
+              {
+                name: "Residencial Zapopan",
+                slug: "residencial-zapopan",
+                type: "Desarrollo Residencial",
+                location: "Zapopán, Jalisco",
+                value: 25000000,
+                returnRate: 12,
+                term: 24,
+                image: "/luxury-residential-development-mexico-city.jpg",
+              },
+              {
+                name: "Plaza Comercial Garza García",
+                slug: "plaza-comercial-garza-garcia",
+                type: "Comercial",
+                location: "Garza García, Nuevo León",
+                value: 50000000,
+                returnRate: 14,
+                term: 30,
+                image: "/modern-commercial-plaza-mexico.jpg",
+              },
+              {
+                name: "Torre Mixta Puebla",
+                slug: "torre-mixta-puebla",
+                type: "Mixto (Residencial + Comercial)",
+                location: "Centro, Puebla",
+                value: 80000000,
+                returnRate: 15,
+                term: 36,
+                image: "/mixed-use-tower-reforma-avenue.jpg",
+              },
             ].map((project, idx) => (
               <div
                 key={idx}
