@@ -5,9 +5,9 @@ export const projectsData: Record<string, any> = {
     location: "Coyoacán, CDMX",
     fullAddress: "Av. Universidad 1234, Del Carmen, Coyoacán, CDMX",
     value: 25000000,
-    minInvestment: 50000,
-    returnRate: 12, // Rendimiento anual promedio realista
-    appreciationRate: 6, // Plusvalía anual
+    minInvestment: 1,
+    returnRate: 12,
+    appreciationRate: 6,
     term: 24,
     status: "En Construcción - 45% Avanzado",
     image: "/luxury-residential-development-mexico-city.jpg",
@@ -33,7 +33,7 @@ export const projectsData: Record<string, any> = {
     },
     financials: {
       projectValue: 25000000,
-      minInvestment: 50000,
+      minInvestment: 1,
       currentFunding: 65,
       expectedReturn: 12,
       distributionFrequency: "Trimestral",
@@ -45,7 +45,7 @@ export const projectsData: Record<string, any> = {
     location: "Polanco, CDMX",
     fullAddress: "Av. Presidente Masaryk 520, Polanco, Miguel Hidalgo, CDMX",
     value: 50000000,
-    minInvestment: 100000,
+    minInvestment: 1,
     returnRate: 14,
     appreciationRate: 7,
     term: 30,
@@ -73,7 +73,7 @@ export const projectsData: Record<string, any> = {
     },
     financials: {
       projectValue: 50000000,
-      minInvestment: 100000,
+      minInvestment: 1,
       currentFunding: 100,
       expectedReturn: 14,
       distributionFrequency: "Mensual",
@@ -85,7 +85,7 @@ export const projectsData: Record<string, any> = {
     location: "Reforma, CDMX",
     fullAddress: "Paseo de la Reforma 505, Cuauhtémoc, CDMX",
     value: 80000000,
-    minInvestment: 150000,
+    minInvestment: 1,
     returnRate: 15,
     appreciationRate: 8,
     term: 36,
@@ -113,7 +113,7 @@ export const projectsData: Record<string, any> = {
     },
     financials: {
       projectValue: 80000000,
-      minInvestment: 150000,
+      minInvestment: 1,
       currentFunding: 30,
       expectedReturn: 15,
       distributionFrequency: "Trimestral",

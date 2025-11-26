@@ -12,7 +12,7 @@ interface ProjectPageProps {
 }
 
 export default function ProjectPageClient({ slug, project }: ProjectPageProps) {
-  const [investment, setInvestment] = useState(100000)
+  const [investment, setInvestment] = useState(1)
   const [timeHorizon, setTimeHorizon] = useState(10)
   const [showTable, setShowTable] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

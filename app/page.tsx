@@ -10,7 +10,7 @@ import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react"
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [showModal, setShowModal] = useState(false)
-  const [contributionAmount, setContributionAmount] = useState(50000)
+  const [contributionAmount, setContributionAmount] = useState(1) // changed initial state from 50000 to 1
   const [currentProject, setCurrentProject] = useState({
     name: "",
     totalValue: 0,
@@ -30,7 +30,7 @@ export default function Home() {
 
   // Calculate simulation results
   const calculateResults = () => {
-    const contribution = Math.max(5000, Math.round(contributionAmount / 1000) * 1000)
+    const contribution = Math.max(1, Math.round(contributionAmount / 1) * 1)
     const participationPercent = (contribution / currentProject.totalValue) * 100
     const totalReturn = contribution * (currentProject.returnRate / 100)
     const yearsDecimal = currentProject.termMonths / 12
@@ -107,7 +107,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               Consultoría legal, contable y fiscal profesional en CDMX. Además, oportunidades de crecimiento patrimonial
-              a través de proyectos inmobiliarios con aportaciones desde $5,000 MXN.
+              a través de proyectos inmobiliarios con aportaciones desde $1.00 MXN.
             </p>
             <div className="flex gap-4 flex-wrap">
               <a
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-extrabold text-gray-800 mb-4">Proyectos de Crecimiento Patrimonial</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Invierte en proyectos inmobiliarios respaldados y bien estructurados. Aportaciones desde $5,000 MXN con
+              Invierte en proyectos inmobiliarios respaldados y bien estructurados. Aportaciones desde $1.00 MXN con
               rendimientos atractivos y transparencia total.
             </p>
           </div>
@@ -524,7 +524,7 @@ export default function Home() {
                 <i className="fas fa-chevron-down group-open:rotate-180 transition-transform text-orange-600"></i>
               </summary>
               <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $50,000 MXN. Cada
+                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $1.00 MXN. Cada
                 proyecto tiene condiciones específicas que se detallan en su página individual. Nuestros asesores pueden
                 ayudarte a encontrar la opción que mejor se ajuste a tu capacidad de inversión.
               </div>
@@ -772,14 +772,14 @@ export default function Home() {
                   <input
                     type="number"
                     id="modalContribution"
-                    min="5000"
-                    step="1000"
+                    min="1"
+                    step="1"
                     value={contributionAmount}
                     onChange={(e) => setContributionAmount(Number(e.target.value))}
                     className="w-full pl-10 pr-4 py-4 border-2 border-gray-200 rounded-lg text-xl font-semibold text-gray-800 focus:border-orange-500 focus:outline-none transition-colors"
                   />
                 </div>
-                <p className="text-sm text-gray-600 mt-2">Mínimo: $5,000 MXN | Múltiplos de $1,000</p>
+                <p className="text-sm text-gray-600 mt-2">Mínimo: $1.00 MXN | Sin límite de múltiplos</p>
               </div>
 
               <div className="bg-gray-50 p-8 rounded-xl mb-8 space-y-6">
