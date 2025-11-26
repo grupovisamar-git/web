@@ -10,7 +10,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 6,
     term: 24,
     status: "En Construcción - 45% Avanzado",
-    image: "/luxury-residential-development-mexico-city.jpg",
+    image: "/residencial-zapopan.jpg",
     description:
       "Desarrollo residencial de lujo que combina arquitectura contemporánea con la tradición de Zapopán. 48 residencias exclusivas con amenidades de primer nivel en una de las zonas más prestigiosas de Guadalajara.",
     features: [
@@ -50,7 +50,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 7,
     term: 30,
     status: "En Operación - Generando Rendimientos",
-    image: "/modern-commercial-plaza-mexico.jpg",
+    image: "/plaza-comercial-garza-garcia.jpg",
     description:
       "Plaza comercial premium en el corazón de Garza García, con locales arrendados a marcas internacionales de prestigio. Rendimientos estables y plusvalía garantizada en la zona más exclusiva de Monterrey.",
     features: [
@@ -90,7 +90,7 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 8,
     term: 36,
     status: "Fase de Pre-venta - 30% Vendido",
-    image: "/mixed-use-tower-reforma-avenue.jpg",
+    image: "/torre-mixta-puebla.jpg",
     description:
       "Desarrollo icónico de uso mixto en el Centro Histórico de Puebla. 28 pisos que combinan departamentos de lujo, oficinas corporativas y retail de alto nivel. La inversión más estratégica en Puebla.",
     features: [
