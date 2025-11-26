@@ -1,3 +1,5 @@
+// Last updated: 2025-11-25 - Projects: Zapopan, Garza García, Puebla
+
 export const projectsData: Record<string, any> = {
   "residencial-lazaro-cardenas-zapopan": {
     name: "Residencial Lázaro Cárdenas",
