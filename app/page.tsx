@@ -284,10 +284,11 @@ export default function Home() {
                 term: 32,
                 image: "/business-center-imc-puebla.jpg",
               },
-            ].map((project, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col"
+            ].map((project) => (
+              <Link
+                key={project.slug}
+                href={`/proyectos/${project.slug}`}
+                className="group border-2 border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:border-orange-500 flex flex-col h-full"
               >
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -326,14 +327,14 @@ export default function Home() {
                       <span className="font-bold text-gray-900">{project.term} meses</span>
                     </div>
                   </div>
-                  <Link
+                  <a
                     href={`/proyectos/${project.slug}`}
                     className="block w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center py-3 rounded-xl font-bold hover:from-amber-700 hover:to-orange-700 transition-all mt-auto"
                   >
                     Ver Detalles y Simulador
-                  </Link>
+                  </a>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
