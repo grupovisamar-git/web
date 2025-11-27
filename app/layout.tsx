@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "Invierte en proyectos inmobiliarios desde $1 MXN. Aportaciones seguras con rendimientos del 12-15% anual.",
     images: [
       {
-        url: "/logotipo-visamar.png",
+        url: "/images/logotipo-visamar.png",
         width: 180,
         height: 50,
         alt: "Grupo Visamar",
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Grupo Visamar",
     description: "Invierte en proyectos inmobiliarios desde $1 MXN",
-    images: ["/logotipo-visamar.png"],
+    images: ["/images/logotipo-visamar.png"],
   },
   icons: {
     icon: [
       {
-        url: "/logotipo-visamar.png",
+        url: "/images/logotipo-visamar.png",
         type: "image/png",
       },
     ],
-    apple: "/logotipo-visamar.png",
+    apple: "/images/logotipo-visamar.png",
   },
 }
 
