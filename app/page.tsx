@@ -10,7 +10,7 @@ import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react"
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [showModal, setShowModal] = useState(false)
-  const [contributionAmount, setContributionAmount] = useState(50000)
+  const [contributionAmount, setContributionAmount] = useState(1)
   const [currentProject, setCurrentProject] = useState({
     name: "",
     totalValue: 0,
@@ -30,7 +30,7 @@ export default function Home() {
 
   // Calculate simulation results
   const calculateResults = () => {
-    const contribution = Math.max(5000, Math.round(contributionAmount / 1000) * 1000)
+    const contribution = Math.max(1, Math.round(contributionAmount))
     const participationPercent = (contribution / currentProject.totalValue) * 100
     const totalReturn = contribution * (currentProject.returnRate / 100)
     const yearsDecimal = currentProject.termMonths / 12
@@ -253,6 +253,36 @@ export default function Home() {
                 returnRate: 15,
                 term: 36,
                 image: "/mixed-use-tower-reforma-avenue.jpg",
+              },
+              {
+                name: "Desarrollo Residencial Zapopan Premium",
+                slug: "desarrollo-residencial-zapopan",
+                type: "Desarrollo Residencial de Lujo",
+                location: "Zapopan, Jalisco",
+                value: 35000000,
+                returnRate: 13,
+                term: 24,
+                image: "/luxury-residential-zapopan.jpg",
+              },
+              {
+                name: "Plaza Premium Querétaro",
+                slug: "plaza-premium-queretaro",
+                type: "Desarrollo Comercial Mixto",
+                location: "Santiago de Querétaro, Querétaro",
+                value: 45000000,
+                returnRate: 14,
+                term: 28,
+                image: "/commercial-plaza-queretaro.jpg",
+              },
+              {
+                name: "Torre Histórica Puebla",
+                slug: "torre-historica-puebla",
+                type: "Desarrollo Mixto Patrimonial",
+                location: "Centro Histórico, Puebla",
+                value: 55000000,
+                returnRate: 15,
+                term: 32,
+                image: "/heritage-tower-puebla.jpg",
               },
             ].map((project, idx) => (
               <div
@@ -772,14 +802,14 @@ export default function Home() {
                   <input
                     type="number"
                     id="modalContribution"
-                    min="5000"
-                    step="1000"
+                    min="1"
+                    step="1"
                     value={contributionAmount}
                     onChange={(e) => setContributionAmount(Number(e.target.value))}
                     className="w-full pl-10 pr-4 py-4 border-2 border-gray-200 rounded-lg text-xl font-semibold text-gray-800 focus:border-orange-500 focus:outline-none transition-colors"
                   />
                 </div>
-                <p className="text-sm text-gray-600 mt-2">Mínimo: $5,000 MXN | Múltiplos de $1,000</p>
+                <p className="text-sm text-gray-600 mt-2">Mínimo: $1 MXN | Sin límite</p>
               </div>
 
               <div className="bg-gray-50 p-8 rounded-xl mb-8 space-y-6">
