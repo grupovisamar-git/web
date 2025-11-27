@@ -10,7 +10,7 @@ import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react"
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [showModal, setShowModal] = useState(false)
-  const [contributionAmount, setContributionAmount] = useState(1) // changed initial state from 50000 to 1
+  const [contributionAmount, setContributionAmount] = useState(1)
   const [currentProject, setCurrentProject] = useState({
     name: "",
     totalValue: 0,
@@ -30,7 +30,7 @@ export default function Home() {
 
   // Calculate simulation results
   const calculateResults = () => {
-    const contribution = Math.max(1, Math.round(contributionAmount / 1) * 1)
+    const contribution = Math.max(1, Math.round(contributionAmount))
     const participationPercent = (contribution / currentProject.totalValue) * 100
     const totalReturn = contribution * (currentProject.returnRate / 100)
     const yearsDecimal = currentProject.termMonths / 12
@@ -107,7 +107,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               Consultoría legal, contable y fiscal profesional en CDMX. Además, oportunidades de crecimiento patrimonial
-              a través de proyectos inmobiliarios con aportaciones desde $1.00 MXN.
+              a través de proyectos inmobiliarios con aportaciones desde $5,000 MXN.
             </p>
             <div className="flex gap-4 flex-wrap">
               <a
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-extrabold text-gray-800 mb-4">Proyectos de Crecimiento Patrimonial</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Invierte en proyectos inmobiliarios respaldados y bien estructurados. Aportaciones desde $1.00 MXN con
+              Invierte en proyectos inmobiliarios respaldados y bien estructurados. Aportaciones desde $5,000 MXN con
               rendimientos atractivos y transparencia total.
             </p>
           </div>
@@ -255,34 +255,34 @@ export default function Home() {
                 image: "/mixed-use-tower-reforma-avenue.jpg",
               },
               {
-                name: "Residencial Zapopan",
-                slug: "residencial-zapopan",
-                type: "Desarrollo Residencial",
-                location: "Zapopán, Jalisco",
-                value: 25000000,
-                returnRate: 12,
+                name: "Desarrollo Residencial Zapopan Premium",
+                slug: "desarrollo-residencial-zapopan",
+                type: "Desarrollo Residencial de Lujo",
+                location: "Zapopan, Jalisco",
+                value: 35000000,
+                returnRate: 13,
                 term: 24,
-                image: "/luxury-residential-development-mexico-city.jpg",
+                image: "/luxury-residential-zapopan.jpg",
               },
               {
-                name: "Plaza Comercial Garza García",
-                slug: "plaza-comercial-garza-garcia",
-                type: "Comercial",
-                location: "Garza García, Nuevo León",
-                value: 50000000,
+                name: "Plaza Premium Querétaro",
+                slug: "plaza-premium-queretaro",
+                type: "Desarrollo Comercial Mixto",
+                location: "Santiago de Querétaro, Querétaro",
+                value: 45000000,
                 returnRate: 14,
-                term: 30,
-                image: "/modern-commercial-plaza-mexico.jpg",
+                term: 28,
+                image: "/commercial-plaza-queretaro.jpg",
               },
               {
-                name: "Torre Mixta Puebla",
-                slug: "torre-mixta-puebla",
-                type: "Mixto (Residencial + Comercial)",
-                location: "Centro, Puebla",
-                value: 80000000,
+                name: "Torre Histórica Puebla",
+                slug: "torre-historica-puebla",
+                type: "Desarrollo Mixto Patrimonial",
+                location: "Centro Histórico, Puebla",
+                value: 55000000,
                 returnRate: 15,
-                term: 36,
-                image: "/mixed-use-tower-reforma-avenue.jpg",
+                term: 32,
+                image: "/heritage-tower-puebla.jpg",
               },
             ].map((project, idx) => (
               <div
@@ -554,7 +554,7 @@ export default function Home() {
                 <i className="fas fa-chevron-down group-open:rotate-180 transition-transform text-orange-600"></i>
               </summary>
               <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $1.00 MXN. Cada
+                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $50,000 MXN. Cada
                 proyecto tiene condiciones específicas que se detallan en su página individual. Nuestros asesores pueden
                 ayudarte a encontrar la opción que mejor se ajuste a tu capacidad de inversión.
               </div>
@@ -809,7 +809,7 @@ export default function Home() {
                     className="w-full pl-10 pr-4 py-4 border-2 border-gray-200 rounded-lg text-xl font-semibold text-gray-800 focus:border-orange-500 focus:outline-none transition-colors"
                   />
                 </div>
-                <p className="text-sm text-gray-600 mt-2">Mínimo: $1.00 MXN | Sin límite de múltiplos</p>
+                <p className="text-sm text-gray-600 mt-2">Mínimo: $1 MXN | Sin límite</p>
               </div>
 
               <div className="bg-gray-50 p-8 rounded-xl mb-8 space-y-6">
