@@ -1,9 +1,9 @@
 export const projectsData: Record<string, any> = {
   "desarrollo-residencial-zapopan": {
-    name: "Desarrollo Residencial Zapopan Premium",
+    name: "Desarrollo Residencial Zapopan Diamante",
     type: "Desarrollo Residencial de Lujo",
     location: "Zapopan, Jalisco",
-    fullAddress: "Av. Paseo del Bosque 2500, Zapopan, Jalisco",
+    fullAddress: "Paseo Residencial Diamante, Zapopan, Jalisco",
     value: 35000000,
     minInvestment: 1,
     returnRate: 13,
@@ -39,8 +39,8 @@ export const projectsData: Record<string, any> = {
       distributionFrequency: "Trimestral",
     },
   },
-  "plaza-premium-queretaro": {
-    name: "Plaza Premium Querétaro",
+  "plaza-infinito-queretaro": {
+    name: "Plaza Infinito Querétaro",
     type: "Desarrollo Comercial Mixto",
     location: "Santiago de Querétaro, Querétaro",
     fullAddress: "Av. Tecnológico 4000, Querétaro, Querétaro",
@@ -79,9 +79,9 @@ export const projectsData: Record<string, any> = {
       distributionFrequency: "Bimestral",
     },
   },
-  "torre-historica-puebla": {
-    name: "Torre Histórica Puebla",
-    type: "Desarrollo Mixto Patrimonial",
+  "business-center-imc-puebla": {
+    name: "Business Center IMC Puebla",
+    type: "Desarrollo Mixto (Residencial + Oficinas + Comercial)",
     location: "Centro Histórico, Puebla",
     fullAddress: "Av. Reforma 1001, Centro Histórico, Puebla",
     value: 55000000,
@@ -90,22 +90,23 @@ export const projectsData: Record<string, any> = {
     appreciationRate: 8,
     term: 32,
     status: "En Pre-venta - 25% Vendido",
-    image: "/heritage-tower-puebla.jpg",
+    image: "/business-center-imc-puebla.jpg",
     description:
-      "Proyecto emblemático en el Centro Histórico de Puebla, Patrimonio de la Humanidad. Rehabilitación de edificio histórico con 110 departamentos de lujo y espacios comerciales.",
+      "Proyecto emblemático mixto en Puebla con departamentos de vivienda, oficinas corporativas y locales comerciales. Mini ciudad integrada con todas las comodidades y servicios modernos en un solo lugar.",
     features: [
-      "Torre de 15 pisos en zona patrimonio",
-      "110 departamentos con vista al zócalo",
-      "Oficinas corporativas y retail",
-      "Restaurante y café-bar",
+      "Torre de 15 pisos en zona estratégica",
+      "110 departamentos de lujo",
+      "60 oficinas corporativas",
+      "80 locales comerciales",
+      "Centro comercial integrado",
       "Terraza con vista panorámica",
       "Spa y área de descanso",
-      "Estacionamiento subterráneo",
+      "Estacionamiento subterráneo de 500 cajones",
       "Certificación LEED",
     ],
     stats: {
-      totalUnits: 110,
-      soldUnits: 27,
+      totalUnits: 250,
+      soldUnits: 62,
       totalInvestors: 195,
       averageReturn: "15-17%",
       constructionProgress: 20,
