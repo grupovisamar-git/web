@@ -225,36 +225,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
-                name: "Residencial Las Palmas",
-                slug: "residencial-las-palmas",
-                type: "Desarrollo Residencial",
-                location: "Coyoacán, CDMX",
-                value: 25000000,
-                returnRate: 12,
-                term: 24,
-                image: "/luxury-residential-development-mexico-city.jpg",
-              },
-              {
-                name: "Plaza Comercial Centro",
-                slug: "plaza-comercial-centro",
-                type: "Comercial",
-                location: "Polanco, CDMX",
-                value: 50000000,
-                returnRate: 14,
-                term: 30,
-                image: "/modern-commercial-plaza-mexico.jpg",
-              },
-              {
-                name: "Torre Mixta Reforma",
-                slug: "torre-mixta-reforma",
-                type: "Mixto (Residencial + Comercial)",
-                location: "Reforma, CDMX",
-                value: 80000000,
-                returnRate: 15,
-                term: 36,
-                image: "/mixed-use-tower-reforma-avenue.jpg",
-              },
-              {
                 name: "Desarrollo Residencial Zapopan Diamante",
                 slug: "desarrollo-residencial-zapopan",
                 type: "Desarrollo Residencial de Lujo",
