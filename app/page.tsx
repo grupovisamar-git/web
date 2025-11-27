@@ -525,7 +525,7 @@ export default function Home() {
                 <i className="fas fa-chevron-down group-open:rotate-180 transition-transform text-orange-600"></i>
               </summary>
               <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $50,000 MXN. Cada
+                La inversión mínima varía según el proyecto, pero generalmente puedes participar desde $1.00 MXN. Cada
                 proyecto tiene condiciones específicas que se detallan en su página individual. Nuestros asesores pueden
                 ayudarte a encontrar la opción que mejor se ajuste a tu capacidad de inversión.
               </div>
