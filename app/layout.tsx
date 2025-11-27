@@ -12,24 +12,38 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Grupo Visamar - Consultoría Legal, Contable, Fiscal y Proyectos de Crecimiento Patrimonial en CDMX",
   description:
-    "Grupo Visamar ofrece consultoría legal, contable y fiscal profesional en CDMX, además de proyectos de crecimiento patrimonial inmobiliario con aportaciones desde $5,000 MXN.",
+    "Grupo Visamar ofrece consultoría legal, contable y fiscal profesional en CDMX, además de proyectos de crecimiento patrimonial inmobiliario con aportaciones desde $1 MXN.",
   generator: "v0.app",
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    url: "https://grupovisamar.com",
+    title: "Grupo Visamar - Consultoría Legal, Contable, Fiscal y Proyectos de Crecimiento Patrimonial",
+    description:
+      "Invierte en proyectos inmobiliarios desde $1 MXN. Aportaciones seguras con rendimientos del 12-15% anual.",
+    images: [
+      {
+        url: "/logotipo-visamar.png",
+        width: 180,
+        height: 50,
+        alt: "Grupo Visamar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Grupo Visamar",
+    description: "Invierte en proyectos inmobiliarios desde $1 MXN",
+    images: ["/logotipo-visamar.png"],
+  },
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/logotipo-visamar.png",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/logotipo-visamar.png",
   },
 }
 

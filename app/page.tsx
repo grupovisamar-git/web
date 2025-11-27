@@ -107,7 +107,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               Consultoría legal, contable y fiscal profesional en CDMX. Además, oportunidades de crecimiento patrimonial
-              a través de proyectos inmobiliarios con aportaciones desde $5,000 MXN.
+              a través de proyectos inmobiliarios con aportaciones desde $1 MXN.
             </p>
             <div className="flex gap-4 flex-wrap">
               <a
@@ -255,7 +255,7 @@ export default function Home() {
                 image: "/mixed-use-tower-reforma-avenue.jpg",
               },
               {
-                name: "Desarrollo Residencial Zapopan Premium",
+                name: "Desarrollo Residencial Zapopan Diamante",
                 slug: "desarrollo-residencial-zapopan",
                 type: "Desarrollo Residencial de Lujo",
                 location: "Zapopan, Jalisco",
@@ -265,8 +265,8 @@ export default function Home() {
                 image: "/luxury-residential-zapopan.jpg",
               },
               {
-                name: "Plaza Premium Querétaro",
-                slug: "plaza-premium-queretaro",
+                name: "Plaza Infinito Querétaro",
+                slug: "plaza-infinito-queretaro",
                 type: "Desarrollo Comercial Mixto",
                 location: "Santiago de Querétaro, Querétaro",
                 value: 45000000,
@@ -275,19 +275,19 @@ export default function Home() {
                 image: "/commercial-plaza-queretaro.jpg",
               },
               {
-                name: "Torre Histórica Puebla",
-                slug: "torre-historica-puebla",
-                type: "Desarrollo Mixto Patrimonial",
+                name: "Business Center IMC Puebla",
+                slug: "business-center-imc-puebla",
+                type: "Desarrollo Mixto (Residencial + Oficinas + Comercial)",
                 location: "Centro Histórico, Puebla",
                 value: 55000000,
                 returnRate: 15,
                 term: 32,
-                image: "/heritage-tower-puebla.jpg",
+                image: "/business-center-imc-puebla.jpg",
               },
             ].map((project, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col"
               >
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -296,7 +296,7 @@ export default function Home() {
                   height={200}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-8">
+                <div className="p-8 flex flex-col flex-grow">
                   <span className="inline-block bg-green-500 text-white px-3 py-1 rounded-xl text-xs font-semibold mb-4">
                     Disponible
                   </span>
@@ -306,7 +306,7 @@ export default function Home() {
                     <MapPin className="w-4 h-4 mr-2" />
                     {project.location}
                   </p>
-                  <div className="border-t-2 border-gray-100 pt-4 mb-4 space-y-2">
+                  <div className="border-t-2 border-gray-100 pt-4 mb-4 space-y-2 flex-grow">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Valor del proyecto:</span>
                       <span className="font-bold text-gray-900">
@@ -328,7 +328,7 @@ export default function Home() {
                   </div>
                   <Link
                     href={`/proyectos/${project.slug}`}
-                    className="block w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center py-3 rounded-xl font-bold hover:from-amber-700 hover:to-orange-700 transition-all"
+                    className="block w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center py-3 rounded-xl font-bold hover:from-amber-700 hover:to-orange-700 transition-all mt-auto"
                   >
                     Ver Detalles y Simulador
                   </Link>
